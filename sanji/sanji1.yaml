@@ -1,8 +1,8 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: whoami-1
+  name: sanji
 spec:
   containers:
-    - name: web
+    - name: sanji
       image: kiamol/ch02-whoami
