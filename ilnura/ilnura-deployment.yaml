@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ilnura-deployment
+  labels:
+    app: seytech-task
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: seytech-task
+  template:
+    metadata:
+      labels:
+        app: seytech-task
+    spec:
+      containers:
+        - name: seytech-task
+          image: kiamol/ch02-whoami
