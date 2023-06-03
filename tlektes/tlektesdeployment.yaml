@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: web
-      image: ../kiamol/ch02-whoami
+      image: kiamol/ch02-whoami
       ports:
         - containerPort: 80
