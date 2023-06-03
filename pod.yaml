@@ -4,5 +4,5 @@ metadata:
   name: whoami-1
 spec:
   containers:
-    - name: whoami-1
+    - name: web
       image: kiamol/ch02-whoami
