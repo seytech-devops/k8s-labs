@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ilnura-pod
+spec:
+  containers:
+    - name: web
+      image: kiamol/ch02-whoami
