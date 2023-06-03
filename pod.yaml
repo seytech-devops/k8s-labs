@@ -1,8 +1,8 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: aigerim-deployment
+  name: aigerim
 spec:
   containers:
-    - name: web
+    - name: aigerim 
       image: kiamol/ch02-whoami
