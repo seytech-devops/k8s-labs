@@ -1,4 +1,4 @@
-appVerion: v1
-Kind: Namespace
-metadata: 
+apiVersion: v1 
+kind: Namespace
+metadata:
   name: seytech

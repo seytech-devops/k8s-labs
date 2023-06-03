@@ -1,6 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: seytech
   name: myapp
   labels:
     tier: frontend
@@ -16,10 +17,10 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: nginx
+        image: nginx 
         resources:
           limits:
-          memory: "120Mi"
-          CPU: "500m"
+            memory: "128Mi"
+            cpu: "500m"
         ports:
         - containerPort: 80
