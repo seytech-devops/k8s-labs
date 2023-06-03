@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Deployment
+metadata:
+  name: dzhalsan
+spec:
+  containers:
+    - name: dzhalsan
+      image: kiamol/ch02-whoami
