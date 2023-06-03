@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sanji
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: sanji
+  template:
+    metadata:
+      labels:
+        app: sanji
+    spec:
+      containers:
+      - name: sanji
+        image: kiamol/ch02-whoami
+        ports:
+        - containerPort: 8080
