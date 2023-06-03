@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: ilnura
+  name: ilnura-pod
 spec:
   containers:
     - name: web
