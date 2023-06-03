@@ -17,10 +17,10 @@ spec:
     spec:
       containers:
       - name: web
-      image: kiamol/ch02-whoami
-      resources:
-        limits:
-          memory: "128Mi"
-          cpu: "500m"
-      ports:
-        - containerPort: 80
+        image: kiamol/ch02-whoami
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+          - containerPort: 80
