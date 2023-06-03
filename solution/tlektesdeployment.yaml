@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tlektes-deployment
+  labels:
+    app: seytech
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: seytech
+  template:
+    metadata:
+      labels:
+        app: seytech
+    spec:
+      containers:
+      - name: web
+      image: kiamol/ch02-whoami
+      ports:
+        - containerPort: 80
