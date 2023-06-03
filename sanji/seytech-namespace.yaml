@@ -1,0 +1,4 @@
+appVerion: v1
+Kind: Namespace
+metadata: 
+  name: seytech
