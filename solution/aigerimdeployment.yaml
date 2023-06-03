@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-deployment
+  name: aigerim
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: my-app
+      app: aigerim
   template:
     metadata:
       labels:
-        app: my-app
+        app: aigerim
     spec:
       containers:
         - name: my-container
