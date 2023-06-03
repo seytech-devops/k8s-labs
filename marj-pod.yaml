@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: marjan
+spec:
+  containers:
+    - name: marjan
+      image: kiamol/ch02-whoami
