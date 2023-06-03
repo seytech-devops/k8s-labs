@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aigerim
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: aigerim
+  template:
+    metadata:
+      labels:
+        app: aigerim
+    spec:
+      containers:
+        - name: my-container
+          image: my-image:latest
+          ports:
+            - containerPort: 8080
+
