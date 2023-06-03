@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: seytech
+  name: tlektes-deployment
+  labels:
+    app: seytech
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: seytech
+  template:
+    metadata:
+      labels:
+        app: seytech
+    spec:
+      containers:
+      - name: web
+        image: kiamol/ch02-whoami
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+          - containerPort: 80
