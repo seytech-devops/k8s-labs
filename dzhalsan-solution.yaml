@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dzhalsan
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dzhalsan
+  template:
+    metadata:
+      labels:
+        app: dzhalsan
+    spec:
+      containers:
+      - name: dzhalsan
+        image: kiamol/ch02-whoami
+        ports:
+        - containerPort: 8080
