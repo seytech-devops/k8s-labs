@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  namespace: seytech
+  name: nginix-pv-claim
+  labels:
+    name: nginix-pv-claim
+    type: from-pv
+spec:
+   storageClassName: manual
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
