@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  namespace: seytech
+  name: nginx-po
+  labels:
+  name: nginix-po
+  tier: frontend 
+spec:
+ volumes:
+ name: nginix-pv-storage
+ persistentVolumeClaim:
+ claimName: nginix-pv-claiam
+
+  containers:
+    - name: nginx-po
+      image: nginx
+      ports:
+        - containerPort: 80
+        name: "web server"
+      volumeMounts:
+        - name:  nginix-pv-claim
+        mountPath:  

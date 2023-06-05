@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  namespace: seytech
+  name: nginix-rs
+  labels:
+    name: nginix-rs
+    tier: frontend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      tier: frontend
+  template:
+    metadata:
+      labels:
+        tier: frontend
+    spec:
+      containers:
+        - name: nginix-rs
+          image: nginx
+          ports:
+            - containerPort: 80
